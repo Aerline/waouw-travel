@@ -1,0 +1,1483 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+    font-family: arial,helvetica,sans-serif;
+}
+
+
+#container {
+   min-height:100%;
+   position:relative;
+    margin-top: 86px;
+}
+.bold {
+    font-family: 'brown-bold';
+}
+
+.left {
+    float:left !important;
+}
+
+.right {
+    float: right !important;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display,
+.appears {
+    display: none;
+}
+.appears {
+    background-color: #e8090c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+hr {
+    color: #0e496f;
+    background-color: #0e496f;
+    clear: both;
+    border: 0;
+    height: 2px;
+    width: 100%;
+    margin: 80px 0;
+}
+@media screen and (max-width: 550px) {
+    #container {
+        margin-top: 0;
+    }
+    hr {
+    margin: 30px 0;
+}
+}
+
+
+
+
+#header {
+   background:#ffffff;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px #cdcdcd;
+}
+#header div#header-line {
+    width: 885px;
+    margin: 0 auto;
+    height: 75px;
+    padding: 5px 0;
+}
+#header #header-mobile {
+    display: none;
+}
+#logo-size {
+    width: 20%;
+    float: left;
+}
+#logo-size img {
+    width: 100%;
+    height: auto;
+}
+#menu {
+    max-width: 70%;
+    float:right;
+}
+
+#menu ul li {
+    float: left;
+    padding: 30px 0 15px 35px;
+}
+#menu ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #0e496f;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    transition-property: color;
+}
+#menu ul li a:hover {
+    color: #e2011b;
+    transition-duration: 0.4s;
+    transition-property: color;
+}
+#menu ul li a.active {
+    color: #e2011b;
+}
+#header-visual {
+    width: 100%;
+    height: 422px;
+    background: url(../images/header-visual.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#header-content {
+    max-width: 885px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 35px 0 0 0;
+    position: relative;
+}
+#header-content h2 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-left: -21px;
+}
+#header-content h3 {
+    font-size: 73px;
+    font-family: 'Libertine-Italic', Arial;
+    color: #ffffff;
+    margin-bottom: 60px;
+    text-shadow: 5px 0 113px #000000;
+}
+#header-content h4 {
+    font-size: 90px;
+    font-family: 'Libertine-Italic', Arial;
+    color: #ffffff;
+    margin-top: 100px;
+    margin-left: -20px;
+    text-shadow: 5px 0 40px #000000;
+}
+
+.btn {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 -115px;
+    background-color: #e2011b;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px 0 0 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 218px;
+    height: 46px;
+    text-align: center;
+    display: block;
+    transition-duration: 0.4s;
+    transition-property: background-color;
+}
+
+.btn-travel {
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    margin: 0 0 0 -150px;
+    background-color: #e2011b;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 17px 0 0 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 315px;
+    height: 46px;
+    text-align: center;
+    display: block;
+    transition-duration: 0.4s;
+    transition-property: background-color;
+}
+.btn-travel-2 {
+    position: relative;
+    top:0;
+    left: 49%;
+    margin: 0 0 80px -150px;
+    background-color: #e2011b;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 17px 0 0 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 315px;
+    height: 46px;
+    text-align: center;
+    display: block;
+    transition-duration: 0.4s;
+    transition-property: background-color;
+}
+.btn:hover,
+.btn-travel:hover,
+.btn-travel-2:hover,
+.btn-content:hover {
+    background-color: #ba1c1e;
+    transition: 0.4s;
+    transition-property: background-color;
+}
+.arrow-left {
+   width: 12px;
+    padding: 3px 5px 0 0;
+}
+.displays {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    
+     div#header-visual {
+        display: none;
+        clear: both;
+    }
+    #menu {
+        width: 80%;
+        float: none;
+    }
+    #menu ul li {
+        padding: 30px 0 0 25px;
+    }
+    #menu ul li a {
+        font-size: 12px;
+    }
+    .displays {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    #header {
+        position: static;
+    }
+    #header-line {
+        display: none;
+    }
+    .appears {
+        display: block;
+    }
+    #header-mobile {
+        display: block !important;
+        position: relative;
+    }
+    #header-mobile .appears,
+    #header-mobile .back-home,
+    #header-mobile .contact {
+        width: 33%;
+        float: left;
+        position: relative;
+        height: 50px;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 48px;
+    }
+    #header-mobile .nav {
+        width: 100%;
+        background-color: #e8090c;
+        position: relative;
+    }
+    #header-mobile .nav img {
+        width: 26px;
+        vertical-align: middle;
+    }
+    #header-mobile .appears{
+        
+        box-sizing: border-box;
+        border-right: 1px solid #fff;
+    }
+    #header-mobile .back-home {
+        box-sizing: border-box;
+        border-right: 1px solid #fff;
+        background: none;
+    }
+    #header-mobile .back-home img {
+        width: 26px;
+        border: 0;
+        vertical-align: middle;
+    }
+    #header-mobile .contact {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: none;
+        border: none;
+    }
+    #header-mobile .contact img {
+        width: 24px;
+    }
+    #header-mobile .mobile-contact {
+        width: 100%;
+        padding: 35px 0;
+        display: none;
+        border-top: 1px solid #7698ad;
+    }
+    #header-mobile .mobile-contact h2 {
+        color: #0e496f;
+        font-family: "libertine-italic";
+        font-size: 30px;
+        text-align: center;
+    }
+    #header-mobile .mobile-contact p {
+        font-family: "brown-light";
+        font-size: 17px;
+        line-height: 24px;
+        text-align: center;
+        color: #0e496f;
+    }
+    #header-mobile .mobile-contact span.tel {
+        color: #e2011b;
+        font-family: "libertine-italic";
+        font-size: 35px;
+        line-height: 37px;
+    }
+    #header-mobile .mobile-contact span.email {
+        color: #e2011b;
+        font-family: "libertine-italic";
+        font-size: 29px;
+        line-height: 37px;
+    }
+    #logo-size {
+        float: none;
+        width:80%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    #logo-size img {
+        margin: 20px auto;
+    }
+    div#menu {
+        width: 100%;
+        max-width: none;
+        float: none;
+        padding: 35px 0;
+        border-top: 1px solid #7698ad;
+        display: none;
+    }
+    div#menu ul li {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+    div#menu ul li a {
+        font-size: 25px;
+    }
+    div#section-2 div#yourtravel {
+        padding: 35px 0 20px 0 !important;
+    }
+    div#section-2 div#yourtravel p:last-child {
+        margin: 15px 0 !important;
+    }
+    .display {
+        display: block;
+    }
+    
+    
+    /* Page S'épanouir */
+    .arrow-left {
+        width: 13px;
+    }
+    .btn {
+        font-size: 17px;
+        height: 70px;
+        padding: 27px 0 0 0;
+    }
+    .btn-travel-2 {
+        width: 100%;
+        left: 0;
+        padding: 15px 0 0 0;
+        margin: 0 0 125px 0;
+    }
+    
+    /* Page Québec */
+    .btn-travel {
+        width: 100%;
+    }
+}
+
+
+
+#body {
+   padding: 10px 0;
+    overflow: hidden;
+}
+div#section {
+    max-width: 885px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0 100px 0;
+}
+div#section-2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+}
+
+
+
+
+/* Page S'épanouir */
+
+
+div#section div#quebec,
+div#section div#maldives,
+div#section div#grece {
+    max-width: 100%;
+    clear: both;
+    padding: 40px 0;
+}
+div#section img.visual {
+    position: absolute;
+    left: 50%;
+    margin-left: -399px;
+    width: 600px;
+    height: 399px;
+}
+div#section .visual-container{
+    position: relative;
+    float: left;
+    width: 415px;
+    height: 399px;
+    overflow: hidden;
+}
+div#section .visual-container-right{
+    position: relative;
+    float: right;
+    width: 415px;
+    height: 399px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    div#section, div#section-2 {
+        max-width: 100%;
+        padding: 0 0 120px 0;
+    }
+    div#section div#quebec,
+    div#section div#maldives,
+    div#section div#grece {
+        padding: 0;
+    }
+    div#section .visual-container,
+    div#section .visual-container-right{
+        width: 100%;
+        height: auto;
+    }
+    div#section img.visual,
+    div#section img.visual-right{
+        display: block;
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-left: 0;
+    }
+    #section br, #section-2 br {
+    display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    #section br, #section-2 br {
+    display: none;
+    }
+    div#section .visual-container img.visual,
+    div#section .visual-container-right{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+
+
+div#section div.travel-text {
+    float: right;
+    width: 415px;
+    overflow: auto;
+    height: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 23px 0 23px 0;
+    overflow: hidden;
+}
+div#section img.visual-right {
+    position: absolute;
+    left: 70%;
+    margin-left: -399px;
+    width: 600px;
+    height: 400px;
+}
+div#section div.travel-text-left {
+    float: left;
+    width: 415px;
+    overflow: hidden;
+    height: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 23px 0 23px 0;
+}
+div#section h2 {
+    font-size: 40px;
+    font-family: 'Libertine-Italic', Arial;
+    color: #124c72;
+    margin-bottom: 19px;
+}
+div#section div.destination {
+    width: 128px;
+    height: 46px;
+    border-top: 1px solid #124c72;
+    border-right: 1px solid #124c72;
+    border-bottom: 1px solid #124c72;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px 56px 0 0;
+    font-family: 'brown-bold';
+    color: #e2011b;
+    text-transform: uppercase;
+    float: left;
+}
+div#section div.people {
+    width: 175px;
+    height: 46px;
+    border-top: 1px solid #124c72;
+    border-bottom: 1px solid #124c72;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 9px 0 0 0;
+    float: left;
+}
+div#section .icon-family,
+div#section .icon-couple {
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+}
+
+div#section .icon-couple {
+    max-width: 15%;
+}
+
+div#section div#quebec div.days, div#section div#grece div.days {
+    width: 111px;
+    height: 46px;
+    border-top: 1px solid #124c72;
+    border-left: 1px solid #124c72;
+    border-bottom: 1px solid #124c72;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px 0 0 44px;
+    font-family: 'brown-bold';
+    color: #124c72;
+    text-transform: uppercase;
+    float: left;
+}
+div#section div#maldives div.days {
+    width: 111px;
+    height: 46px;
+    border-top: 1px solid #124c72;
+    border-left: 1px solid #124c72;
+    border-bottom: 1px solid #124c72;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px 0 0 36px;
+    font-family: 'brown-bold';
+    color: #124c72;
+    text-transform: uppercase;
+    float: left;
+}
+
+div#section h3 {
+    clear: both;
+    font-family:'brown-regular-alt';
+    font-size: 22px;
+    color: #124c72;
+    padding: 23px 0 23px 0;
+    font-weight: lighter;
+    
+}
+div#section .travel-text ul li,
+div#section .travel-text-left ul li {
+    font-family: 'brown-bold';
+    font-size: 15px;
+    color: #124c72;
+    line-height: 24px;
+    padding: 0 0 0 15px;
+    position: relative;
+}
+div#section .travel-text ul li:before,
+div#section .travel-text-left ul li:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #e2011b;
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+.btn-content {
+    background-color: #e2011b;
+    padding: 16px 0 0 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 194px;
+    height: 46px;
+    text-align: center;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    top: 15px;
+    transition-duration: 0.4s;
+}
+.arrow-right {
+     width: 12px;
+    padding: 2px 0 0 15px;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    
+    
+    /* Page S'épanouir */
+    
+   
+    #body {
+        padding: 0;
+    }
+    div#section #quebec .visual {
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+    div#section #grece .visual {
+        width: 100%;
+        height: auto;
+        clear: both;
+        margin-top: 40px;
+    }
+    div#section img.visual-right {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-left:0;
+        margin-top: 40px;
+    }
+    div#section div.travel-text, div#section div.travel-text-left {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        overflow: none;
+        clear: both;
+    }
+    div#section h2 {
+        font-size: 40px;
+        padding: 20px 0 30px 0;
+        text-align: center;
+    }
+    div#section div.destination {
+        width: 32.5%;
+        padding: 31px 0 0 0;
+        height: 80px;
+        font-size: 22px;
+    }
+    div#section div.people {
+        width: 35%;
+        padding: 12px 0 0 0;
+        height: 80px;
+    }
+    div#section div.people .icon-family {
+        width: 118px;
+    }
+    div#section div.people .icon-couple {
+        width: 63px;
+    }
+    div#section div#quebec div.days, div#section div#maldives div.days,  div#section div#grece div.days {
+        width: 32.5%;
+        padding: 31px 0 0 0;
+        height: 80px;
+        font-size: 24px;
+        margin: 0;
+    }
+    div#section h3 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 24px;
+        clear: both;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 30px 0 30px 0;
+        border-bottom: 1px solid #124c72;
+    }
+    div#section ul li {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 30px;
+        background: none!important;
+        text-transform: uppercase;
+        padding: 25px 0 25px 0!important;
+        border-bottom: 1px solid #124c72;
+        font-size: 14px !important;
+    }
+    div#section .travel-text ul li:before,
+    div#section .travel-text-left ul li:before {
+        display: none;
+    }
+     div#section ul li:last-child {
+         border: none;
+         padding: 25px 0 20px 0!important;
+     }
+    
+    .btn-content {
+        width: 100%;
+        height: 110px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 42px 0 0 0;
+        font-size: 34px;
+        overflow: auto;
+        clear: both;
+        position: static;
+    }
+
+    .arrow-right {
+        width: 30px;
+        padding: 0 0 0 20px;
+    }
+    
+    /* Page Québec */
+    
+    div#section-2 div#yourtravel {
+        width: 90%;
+        margin: 0 auto;
+    }
+    div#section-2 div#yourtravel h2 {
+        font-size: 30px;
+    }
+    div#section-2 div#yourtravel span {
+        font-size: 45px;
+    }
+    div#section-2 div#yourtravel p {
+        display: block;
+        font-family: 'brown-light';
+        color: #0e496f;
+        font-size: 17px;
+        line-height: 24px;
+        margin: 50px 0;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  
+    div#section h2 {
+        font-size: 40px;
+        padding: 0 0 12px 0;
+    }
+    div#section .visual-right {
+        margin-top: 50px;
+    }
+    div#section div.destination {
+        width: 37.5%;
+        padding: 29px 0 0 0;
+        height: 75px;
+        font-size: 18px;
+    }
+    div#section div.people {
+        width: 30%;
+        padding: 20px 0 0 0;
+        height: 75px;
+    }
+    div#section div.travel-text div.people .icon-family {
+        max-width: 55%;
+    }
+    div#section div.travel-text-left div.people .icon-couple {
+        max-width: 30%;
+    }
+    div#section div#quebec div.days, div#section div#maldives div.days,  div#section div#grece div.days {
+        width: 32.5%;
+        padding: 29px 0 0 0;
+        height: 75px;
+        font-size: 18px;
+        margin: 0;
+    }
+    div#section h3 {
+        font-size: 24px;
+        padding: 20px 2%;
+        font-weight: normal;
+    }
+    div#section ul li {
+        font-size: 12px;
+        padding: 16px 0 !important;
+    }
+    .btn-content {
+        font-size: 20px;
+        height: 70px;
+        padding: 26px 0 0 0;
+        position: inherit;
+    }
+    .arrow-right {
+        width: 18px;
+        padding: 2px 0 0 15px;
+    }
+    
+}
+
+
+
+
+/* Page Québec */
+
+div#section-2 div#yourtravel {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 73px 0 0 0;
+    text-align: center;
+}
+div#section-2 div#yourtravel h2 {
+    font-family: 'brown-bold';
+    color: #e2011b;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+div#section-2 div#yourtravel span {
+    display: block;
+    width: 75%;
+    font-family: 'brown-bold';
+    color: #0e496f;
+    font-size: 42px;
+    margin: 50px auto;
+}
+div#section-2 div#yourtravel p {
+    display: block;
+    font-family: 'brown-light';
+    color: #0e496f;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+}
+div#section-2 div#info {
+    max-width: 1000px;
+    padding: 80px 0;
+}
+div#section-2 div#info div.destination {
+    border-top: 1px solid #124c72;
+    border-right: 1px solid #124c72;
+    border-bottom: 1px solid #124c72;
+    font-family: 'brown-bold';
+    color: #e2011b;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    width: 194px;
+    height: 80px;
+    text-align: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 32px 43px 0 0;
+}
+div#section-2 div#info div.people {
+    width: 110px;
+    height: 80px;  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 0 0 5px;
+    border-top: 1px solid #124c72;
+    border-bottom: 1px solid #124c72;
+    float: left;
+}
+div#section-2 .icon-family,
+div#section-2 .icon-couple {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+div#section-2 div#info div.days {
+    width: 140px;
+    height: 80px;
+    border-top: 1px solid #124c72;
+    border-bottom: 1px solid #124c72;
+    border-left: 1px solid #124c72;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 32px 0 0 0;
+    text-align: center;
+    font-family: 'brown-bold';
+    color: #124c72;
+    text-transform: uppercase;
+    float: left;
+}
+div#section-2 div#info div.group {
+    float: left;
+    width: 550px;
+    height: 80px;
+    border-top: 1px solid #124c72;
+    border-bottom: 1px solid #124c72;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px 0 0 27px;
+    overflow: hidden;
+}
+div#section-2 div#info div.group ul {
+    overflow: hidden;
+}
+div#section-2 div#info div.group ul li {
+    font-family: 'brown-bold';
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #124c72;
+    line-height: 24px;
+    padding: 0 0 0 15px;
+    clear: both;
+    position: relative;
+}
+div#section-2 div#info div.group ul li:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #e2011b;
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+
+div#section-2 .tab-container {
+    position: relative;
+    top: 100px;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    margin: 50px 0 100px 0;
+}
+div#section-2 .tab-container ul#tab li {
+    float: left;
+    width: 242px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 14px 0 14px 0;
+    background-color: #0e496f;
+    position: relative;
+    left: 90px;
+    border-top: 1px solid #0e496f;
+    transition-duration: 0.4s;
+    transition-property: background-color;
+}
+div#section-2 .tab-container ul#tab li:hover {
+    background-color: #e2011b;
+    border-top: 1px solid #e2011b;
+    transition-duration: 0.4s;
+    transition-property: background-color;
+}
+div#section-2 .tab-container ul#tab li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+}
+
+div#section-2 .tab-container ul#tab li.active {
+    border-left: 1px solid #7698ad;
+    border-top: 1px solid #7698ad;
+    border-right: 1px solid #7698ad;
+    border-bottom: 1px solid #ffffff;
+    background-color: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: -2px; 
+}
+div#section-2 .tab-container ul#tab li.active a {
+    color: #0e496f;
+}
+div#section-2 .tab-container .group-tab, div#section-2 .tab-container .indi-tab {
+    clear: both;
+    border-top: 1px solid #7698ad;
+    border-bottom: 1px solid #7698ad;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 712px;
+    height: 480px;
+    box-sizing: border-box;
+    padding: 75px 20px 75px 90px;
+    float: left;
+}
+div#section-2 .tab-container .indi-tab {
+    display: none;
+}
+div#section-2 .tab-container .group-tab h2,
+div#section-2 .tab-container .indi-tab h2,
+div#section-2 .tab-container .contact-tab h2 {
+    font-family: 'libertine-italic';
+    font-size: 39px;
+    color: #0e496f;
+}
+div#section-2 .tab-container .group-tab ul,
+div#section-2 .tab-container .indi-tab ul {
+    margin-top: 54px;
+}
+div#section-2 .tab-container .group-tab ul li,
+div#section-2 .tab-container .indi-tab ul li {
+    font-family: 'brown-light';
+    font-size: 17px;
+    color: #0e496f;
+    line-height: 24px;
+    position: relative;
+    padding: 0 0 0 15px;
+}
+div#section-2 .tab-container .group-tab ul li:before,
+div#section-2 .tab-container .indi-tab ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #e51830;
+    top: 10px;
+    left: 0;
+}
+div#section-2 .tab-container .contact-tab {
+    float: left;
+    border-top: 1px solid #7698ad;
+    border-left: 1px solid #7698ad;
+    border-bottom: 1px solid #7698ad;
+    width: 288px;
+    height: 480px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 75px 0 75px 35px;
+}
+div#section-2 .tab-container .contact-tab p {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 52px 0 0 0;
+    font-family: 'brown-light';
+    font-size: 17px;
+    color: #0e496f;
+    line-height: 24px;
+}
+div#section-2 .tab-container .contact-tab p:last-child {
+    padding: 46px 0 0 0;
+}
+div#section-2 .tab-container .contact-tab span.tel {
+    font-size: 35px;
+    line-height: 37px;
+    font-family: 'libertine-italic';
+    color: #e2011b;
+}
+div#section-2 .tab-container .contact-tab span.email {
+    font-size: 29px;
+    line-height: 37px;
+    font-family: 'libertine-italic';
+    color: #e2011b;
+}
+div#section-2 .tab-container .contact-tab a {
+    text-decoration: none;
+    color: #e2011b;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    div#section-2 div#info,
+    div#section-2 div#info div.group,
+    div#section-2 div#info ul,
+    div#section-2 div#info ul li {
+        width: 100%;
+    }
+    div#section-2 div#info div.destination,
+    div#section-2 div#info div.people, 
+    div#section-2 div#info div.days,
+    div#section-2 div#info div.group {
+        height: 80px;
+        font-size: 20px;
+    }
+    div#section-2 div#info div.destination {
+        width: 30%;
+        text-align: center;
+        padding: 32px 0 0 0;
+    }
+    div#section-2 div#info div.people {
+        width: 45%;
+        padding: 8px 0 0 0;
+    }
+    div#section-2 .icon-family {
+        width: 105px;
+    }
+    div#section-2 .icon-couple {
+        width: 63px;
+    }
+    div#section-2 div#info div.days {
+        width: 25%;
+        padding: 32px 0 0 0;
+        margin: 0;
+    }
+    div#section-2 div#info div.group {
+        border: none;
+        padding: 0;
+        height: auto;
+    }
+    div#section-2 div#info ul {
+        height: auto;
+        overflow: hidden;
+    }
+    div#section-2 div#info ul li {
+        display: block;
+        line-height: 30px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #124c72;
+        background: none!important;
+        padding: 30px 0 24px 0!important;
+        text-align: center;
+    }
+    div#section-2 div#info div.group ul li:before {
+        display: none;
+    }
+
+     div#section-2 div#info ul li:last-child {
+         border: none;
+     }
+    div#section-2 .tab-container {
+        max-width: 100%;
+        position: inherit;
+        margin: 50px 0 0 0;
+    }
+    div#section-2 .tab-container ul#tab {
+        max-width: 100%;
+    }
+    div#section-2 .tab-container ul#tab li {
+        position:inherit;
+        width: 50%;
+    }
+    div#section-2 .tab-container ul#tab li.active {
+        border-left: none;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: -2px;
+    }
+    div#section-2 .tab-container .group-tab, div#section-2 .tab-container .indi-tab {
+        max-width: 100%;
+        height: auto;
+        padding: 45px;
+    }
+    div#section-2 .tab-container .contact-tab {
+        border-top: 0;
+        border-left: 0;
+        width: 100%;
+        height: auto;
+        padding: 45px 0 45px 0;
+        text-align: center;
+    }
+    div#section-2 .tab-container .contact-tab span.text-disappear {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    div#section-2 {
+        padding: 0;
+    }
+    div#section-2 div#yourtravel span {
+        font-size: 30px;
+        width: 90%;
+    }
+    div#section-2 div#info {
+        padding: 0;
+    }
+     div#section-2 div#info div.destination,
+    div#section-2 div#info div.people, 
+    div#section-2 div#info div.days,
+    div#section-2 div#info div.group {
+        font-size: 20px;
+    }
+    div#section-2 div#info div.destination {
+        width: 36%;
+        height: 80px;
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    div#section-2 div#info div.people {
+        height: 80px;
+        width: 28%;
+        padding: 18px 0 0 0;
+    }
+    div#section-2 .icon-family,
+    div#section-2 .icon-couple {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+    div#section-2 div#info div.days {
+        height: 80px;
+        width: 36%;
+        padding: 30px 0 0 0;
+    }
+    div#section-2 div#info div.group ul li {
+        font-size: 12px;
+        padding: 15px 0!important;
+    }
+    div#section-2 .tab-container {
+        position: static;
+        margin: 30px 0 0 0;
+    }
+    div#section-2 .tab-container .group-tab,
+    div#section-2 .tab-container .indi-tab {
+       text-align: center;
+        padding: 30px 4%;
+    }
+    div#section-2 .tab-container .group-tab ul,
+    div#section-2 .tab-container .indi-tab ul {
+        margin-top: 20px;
+    }
+    div#section-2 .tab-container .group-tab ul li,
+    div#section-2 .tab-container .indi-tab ul li {
+        padding: 25px 0 0 0;
+    }
+    div#section-2 .tab-container .group-tab ul li:before,
+    div#section-2 .tab-container .indi-tab ul li:before {
+        left: 50%;
+    }
+    div#section-2 .tab-container .group-tab ul li:first-child:before,
+    div#section-2 .tab-container .indi-tab ul li:first-child:before {
+        background: none;
+        padding: 0;
+    }
+    div#section-2 .tab-container ul#tab li {
+        width: 50%;
+        position: static;
+        padding: 25px 0;
+    }
+    div#section-2 .tab-container ul#tab li a {
+        font-size: 12px;
+    }
+    div#section-2 .tab-container .contact-tab {
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 0;
+    }
+    div#section-2 .tab-container .contact-tab span {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
+#body .article {
+    width: 830px;
+    margin: 0 auto;
+    clear: both;
+}
+
+div.article .container-visual{
+    position: relative;
+    width: 415px;
+    height: 399px;
+    overflow: hidden;
+}
+div.article .container-visual {
+    float: left;
+}
+div.article img.visual {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 399px;
+}
+
+
+
+
+div.article div.article-text, div.article div.article-text-left {
+    width: 415px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div.article div.article-text {
+    float: right;
+    padding: 75px 0 0 65px;
+}
+div.article div.article-text h4, div.article div.article-text-left h4 {
+    font-family: 'libertine-italic';
+    font-size: 39px;
+    color: #0e496f;
+}
+div.article div.article-text p, div.article div.article-text-left p {
+    display: block;
+    padding: 32px 0 0 0;
+    font-family: 'brown-light';
+    font-size: 16px;
+    line-height: 20px;
+    color: #0e496f;
+}
+div.article div.article-text-left {
+    float: left;
+    padding: 80px 65px 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #body .article {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: static;
+    }
+    div.article .container-visual,
+    div.article .container-visual-right {
+        width: 100%;
+        height: auto;
+    }
+    div.article div.article-text,
+    div.article div.article-text-left {
+        width: 95%;
+        padding: 50px 0;
+        overflow: hidden;
+        margin: 0 4%;
+    }
+    div.article img.visual {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-left: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+    div.article div.article-text h4,
+    div.article div.article-text p,
+    div.article div.article-text-left h4,
+    div.article div.article-text-left p {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 550px) {
+    #body .article {
+        padding: 0;
+    }
+    div.article div.article-text,
+    div.article div.article-text-left {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 25px 20px 25px 20px;
+    }
+}
+
+
+
+
+
+
+
+/* Footer */
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:75px;   /* Height of the footer */
+   background:#e2011b;
+}
+#footer div#footer-content {
+    width: 885px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+     padding: 30px 0 0 0;
+}
+#footer div#footer-content a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0 40px 0 0;
+    transition-duration: 0.4s;
+    transition-property: color;
+}
+#footer div#footer-content a:hover {
+    color: #7a010f;
+    transition-duration: 0.4s;
+    transition-property: color;
+}
+
+@media screen and (max-width: 1000px) {
+    /* Footer */
+    
+    #footer {
+       background:#0e496f;
+    }
+    #footer div#footer-content {
+        width: 100%;
+    }
+    #footer div#footer-content a {
+        font-size: 18px;
+        height: 45px;
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    #footer {
+        height: 72px;
+    }
+    #footer div#footer-content {
+        padding: 0;
+    }
+    #footer div#footer-content a {
+        height: 39px;
+        border-right: 1px solid #ffffff;
+        font-size: 12px;
+        padding: 32px 20px 0 20px;
+        
+    }
+    #footer div#footer-content a:last-child {
+        border: none;
+    }
+}
